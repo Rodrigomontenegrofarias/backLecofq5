@@ -1,4 +1,4 @@
-const { createFichaPaciente, updateFichaPaciente, deleteFichaPaciente, getFichasPaciente, getFichaPaciente } = require('./fichaPaciente.controller');
+const { } = require('./fichaPaciente.controller');
 const fichaPaciente = require('./fichaPaciente.model');
 
 module.exports = {
