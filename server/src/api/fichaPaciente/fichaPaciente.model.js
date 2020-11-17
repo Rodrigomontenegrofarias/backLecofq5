@@ -6,7 +6,6 @@ const fichaPacienteSchema = new mongoose.Schema({
     },
     rut: {
         type: String,
-        
         required: true
     },
     domicilio: {
