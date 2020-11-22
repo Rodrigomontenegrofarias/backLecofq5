@@ -26,6 +26,7 @@ const especialidadRouter = require('./src/api/especialidades/especialidad.router
 const citaRouter = require('./src/api/citas/cita.router');
 const horaRouter = require('./src/api/horas/hora.router');
 const fichaPacienteRouter = require('./src/api/fichaPaciente/fichaPaciente.router');
+const fichaNutricionistaRouter = require('./src/api/fichaNutricionista/fichaNutricionista.router');
 
 app.use('/areas', areaRouter);
 app.use('/centros', centroRouter);
@@ -33,6 +34,7 @@ app.use('/especialidades', especialidadRouter);
 app.use('/citas',citaRouter);
 app.use('/horas',horaRouter);
 app.use('/fichaPaciente', fichaPacienteRouter);
+app.use('/fichaNutricionista', fichaNutricionistaRouter)
 
 router = express.Router();
 // will redirect all the non-api routes to react frontend
