@@ -63,9 +63,9 @@ module.exports = {
     },
 
 
-    async getFichaPsicologo(req, res) {
+    async getFichasPsicologo(req, res) {
         try {
-            const result = await fichaPsicologo.getFichaPsicologo();
+            const result = await fichaPsicologo.getFichasPsicologo();
             if (!result) {
                 return res.json({
                     status: 'failed',
