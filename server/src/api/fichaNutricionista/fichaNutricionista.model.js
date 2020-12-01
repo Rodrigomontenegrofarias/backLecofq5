@@ -38,27 +38,27 @@ const fichaNutricionistaSchema = new mongoose.Schema({
         // required: true
     },
     patologia: {
-        type: String,
+        type: Boolean,
         // required: true
     },
     diabetes: {
-        type: String,
+        type: Boolean,
         // required: true
     },
     obesidad: {
-        type: String,
+        type: Boolean,
         // required: true
     },
     dislipidemia: {
-        type: String,
+        type: Boolean,
         // required: true
     },
     cancer: {
-        type: String,
+        type: Boolean,
         // required: true
     },
     hta: {
-        type: String,
+        type: Boolean,
         // required: true
     },
     otrasPatologias: {
@@ -116,6 +116,12 @@ const fichaNutricionistaSchema = new mongoose.Schema({
     pesoIdeal: {
         type: String,
         // required: true
+    },
+    tiemposComida: {
+        type: String,
+    },
+    alimentosPorciones: {
+        type: String,
     },
 });
 
