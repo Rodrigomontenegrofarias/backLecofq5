@@ -21,6 +21,6 @@ services:
         - MONGO_DB=$MONGO_DB
     mongo:
       image: mongo
-      container_name: myapp-mongodb
+      container_name: myapp-mongodb4
       ports:
         - "27017:27017"

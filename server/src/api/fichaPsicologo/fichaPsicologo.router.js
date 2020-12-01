@@ -21,7 +21,7 @@ fichaPsicologoRouter.delete(
 //Get All Horas
 fichaPsicologoRouter.get(
     '/',
-    fichaPsicologoController.getFichasPsicologo);
+    fichaPsicologoController.getFichaPsicologo);
 
 //Get One Hora by id
 fichaPsicologoRouter.get(
