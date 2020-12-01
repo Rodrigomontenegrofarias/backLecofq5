@@ -73,8 +73,28 @@ const fichaPsicologoSchema = new mongoose.Schema({
         type: String,
         // required: true
     },
-    dificultadesAprender: {
-        type: String,
+    andar: {
+        type: Boolean,
+        // required: false
+    },
+    hablar: {
+        type: Boolean,
+        // required: false
+    },
+    leerYEscribir: {
+        type: Boolean,
+        // required: false
+    },
+    controlarEsfinter: {
+        type: Boolean,
+        // required: false
+    },
+    conductual: {
+        type: Boolean,
+        // required: false
+    },
+    otros: {
+        type: Boolean,
         // required: false
     },
     enfermedades: {
@@ -96,6 +116,26 @@ const fichaPsicologoSchema = new mongoose.Schema({
     adaptacionEscolar: {
         type: String,
         // required: true
+    },
+    muySatisfecho: {
+        type: Boolean,
+        // required: false
+    },
+    satisfecho: {
+        type: Boolean,
+        // required: false
+    },
+    relativamenteSatisfecho: {
+        type: Boolean,
+        // required: false
+    },
+    insatisfecho: {
+        type: Boolean,
+        // required: false
+    },
+    muyInsatisfecho: {
+        type: Boolean,
+        // required: false
     },
     remuneracion: {
         type: String,
@@ -128,6 +168,298 @@ const fichaPsicologoSchema = new mongoose.Schema({
     perspectivaDesarrollo: {
         type: String,
         // required: true
+    },
+    sociable: {
+        type: Boolean,
+        // required: false
+    },
+    relativamenteSociable: {
+        type: Boolean,
+        // required: false
+    },
+    pocoSociable: {
+        type: Boolean,
+        // required: false
+    },
+    plenamenteSatisfecho: {
+        type: Boolean,
+        // required: false
+    },
+    satisfecho2: {
+        type: Boolean,
+        // required: false
+    },
+    relativamenteSatisfecho2: {
+        type: Boolean,
+        // required: false
+    },
+    insatisfecho2: {
+        type: Boolean,
+        // required: false
+    },
+    muyInsatisfecho2: {
+        type: Boolean,
+        // required: false
+    },
+    muyEstable: {
+        type: Boolean,
+        // required: false
+    },
+    estable: {
+        type: Boolean,
+        // required: false
+    },
+    relativamenteEstable: {
+        type: Boolean,
+        // required: false
+    },
+    variaEnFuncionDeLasExperencias: {
+        type: Boolean,
+        // required: false
+    },
+    cesantia: {
+        type: Boolean,
+        // required: false
+    },
+    separacionMatrimonial: {
+        type: Boolean,
+        // required: false
+    },
+    despidoLaboral: {
+        type: Boolean,
+        // required: false
+    },
+    muerteDeUnFamiliarCercano: {
+        type: Boolean,
+        // required: false
+    },
+    enfermedad: {
+        type: Boolean,
+        // required: false
+    },
+    fuertesProblemasEconomicos: {
+        type: Boolean,
+        // required: false
+    },
+    accidente: {
+        type: Boolean,
+        // required: false
+    },
+    fracasoAcademico: {
+        type: Boolean,
+        // required: false
+    },
+    enfermedadDeUnHijo: {
+        type: Boolean,
+        // required: false
+    },
+    cambioDeResidencia: {
+        type: Boolean,
+        // required: false
+    },
+    si: {
+        type: Boolean,
+        // required: false
+    },
+    no: {
+        type: Boolean,
+        // required: false
+    },
+    ustedEstaMasSatisfechoQueSuPareja: {
+        type: Boolean,
+        // required: false
+    },
+    ambosEstanIgualDeSatisfechos: {
+        type: Boolean,
+        // required: false
+    },
+    suParejaEstaMasSatisfechaQueUsted: {
+        type: Boolean,
+        // required: false
+    },
+    problemasConcentracion: {
+        type: Boolean,
+        // required: false
+    },
+    angustia: {
+        type: Boolean,
+        // required: false
+    },
+    problemasMemoria: {
+        type: Boolean,
+        // required: false
+    },
+    insomnio: {
+        type: Boolean,
+        // required: false
+    },
+    excesoSueño: {
+        type: Boolean,
+        // required: false
+    },
+    pesadillas: {
+        type: Boolean,
+        // required: false
+    },
+    sonambulismo: {
+        type: Boolean,
+        // required: false
+    },
+    aburrimiento: {
+        type: Boolean,
+        // required: false
+    },
+    irritabilidad: {
+        type: Boolean,
+        // required: false
+    },
+    mareos: {
+        type: Boolean,
+        // required: false
+    },
+    cefaleas: {
+        type: Boolean,
+        // required: false
+    },
+    vomitos: {
+        type: Boolean,
+        // required: false
+    },
+    desmayos: {
+        type: Boolean,
+        // required: false
+    },
+    diarreas: {
+        type: Boolean,
+        // required: false
+    },
+    constipacion: {
+        type: Boolean,
+        // required: false
+    },
+    arritmia: {
+        type: Boolean,
+        // required: false
+    },
+    transpiracionManos: {
+        type: Boolean,
+        // required: false
+    },
+    onicofagia: {
+        type: Boolean,
+        // required: false
+    },
+    temblorManos: {
+        type: Boolean,
+        // required: false
+    },
+    bruxismo: {
+        type: Boolean,
+        // required: false
+    },
+    comeExceso: {
+        type: Boolean,
+        // required: false
+    },
+    inapetencia: {
+        type: Boolean,
+        // required: false
+    },
+    sequedadBucal: {
+        type: Boolean,
+        // required: false
+    },
+    ideasObsesivas: {
+        type: Boolean,
+        // required: false
+    },
+    ideasSuicidio: {
+        type: Boolean,
+        // required: false
+    },
+    sentimientosCulpa: {
+        type: Boolean,
+        // required: false
+    },
+    tartamudez: {
+        type: Boolean,
+        // required: false
+    },
+    alteracionesMenstruales: {
+        type: Boolean,
+        // required: false
+    },
+    impotenciaSecual: {
+        type: Boolean,
+        // required: false
+    },
+    frigidez: {
+        type: Boolean,
+        // required: false
+    },
+    eyaculacionprecoz: {
+        type: Boolean,
+        // required: false
+    },
+    dolorVaginal: {
+        type: Boolean,
+        // required: false
+    },
+    pocoDeseo: {
+        type: Boolean,
+        // required: false
+    },
+    tics: {
+        type: Boolean,
+        // required: false
+    },
+    fatiga: {
+        type: Boolean,
+        // required: false
+    },
+    llanto: {
+        type: Boolean,
+        // required: false
+    },
+    desanimo: {
+        type: Boolean,
+        // required: false
+    },
+    pena: {
+        type: Boolean,
+        // required: false
+    },
+    ingestion: {
+        type: Boolean,
+        // required: false
+    },
+    consumos: {
+        type: Boolean,
+        // required: false
+    },
+    hipocondria: {
+        type: Boolean,
+        // required: false
+    },
+    alturas: {
+        type: Boolean,
+        // required: false
+    },
+    espacios: {
+        type: Boolean,
+        // required: false
+    },
+    viajar: {
+        type: Boolean,
+        // required: false
+    },
+    sangre: {
+        type: Boolean,
+        // required: false
+    },
+    espaciosAbiertos: {
+        type: Boolean,
+        // required: false
     },
     tipoPersona: {
         type: String,
