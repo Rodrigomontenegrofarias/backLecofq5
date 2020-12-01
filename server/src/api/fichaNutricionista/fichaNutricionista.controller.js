@@ -9,18 +9,24 @@ module.exports = {
                 return res.json({
                     status: 'failed',
                     msg: "Error al crear una Ficha Nutricionista.",
-                    code: 0
-                    // state: false
+                    code: 0,
+                    state: false
                 });
             }
             return res.json({
                 status: 'success',
                 data: result,
-                code: 1
-                // state: true
+                code: 1,
+                state: true
             });
         } catch (e) {
             console.error(e);
+            return res.json({
+                status: 'failed',
+                msg: "Error al crear la ficha de Paciente.",
+                code: 0,
+                state: false
+            });
         }
     },
 
