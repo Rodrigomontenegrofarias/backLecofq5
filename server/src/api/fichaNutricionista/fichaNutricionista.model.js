@@ -117,6 +117,12 @@ const fichaNutricionistaSchema = new mongoose.Schema({
         type: String,
         // required: true
     },
+    tiemposComida: {
+        type: String,
+    },
+    alimentosPorciones: {
+        type: String,
+    },
 });
 
 const fichaNutricionista = mongoose.model("FichaNutricionista", fichaNutricionistaSchema);
