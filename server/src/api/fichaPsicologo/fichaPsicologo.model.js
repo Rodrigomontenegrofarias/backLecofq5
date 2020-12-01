@@ -13,11 +13,23 @@ const fichaPsicologoSchema = new mongoose.Schema({
         type: String,
         // required: true
     },
+    fechaAtencion: {
+        type: String,
+        // required: true
+    },
     escolaridad: {
         type: String,
         // required: true
     },
     telefono: {
+        type: String,
+        // required: true
+    },
+    lugarNacimiento: {
+        type: String,
+        // required: true
+    },
+    estado_civil: {
         type: String,
         // required: true
     },
@@ -70,6 +82,10 @@ const fichaPsicologoSchema = new mongoose.Schema({
         // required: true
     },
     datosEscolar: {
+        type: String,
+        // required: true
+    },
+    calidadAlumno: {
         type: String,
         // required: true
     },
